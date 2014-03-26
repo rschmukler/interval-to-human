@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rschmukler/interval-to-human",
   "devDependencies": {
-    "mocha": "~1.18.2"
+    "mocha": "~1.18.2",
+    "expect.js": "~0.3.1"
   }
 }
