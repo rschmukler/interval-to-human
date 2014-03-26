@@ -1,0 +1,22 @@
+{
+  "name": "interval-to-human",
+  "version": "0.1.0",
+  "description": "Convert interval to human readable text",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rschmukler/interval-to-human"
+  },
+  "author": "Ryan Schmukler <ryan@slingingcode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rschmukler/interval-to-human/issues"
+  },
+  "homepage": "https://github.com/rschmukler/interval-to-human",
+  "devDependencies": {
+    "mocha": "~1.18.2"
+  }
+}
