@@ -1,4 +1,4 @@
-module.exports = function(interval) {
+module.exports = function(interval, unit) {
   var units = { };
   units.second = 1000;
   units.minute = units.second * 60;
@@ -7,10 +7,12 @@ module.exports = function(interval) {
   units.week = units.day * 7;
   units.month = units.week * 4;
 
-  var unit = 'second';
-  for(var key in units) {
-    if(units[key] <= interval && units[key] > units[unit]) {
-      unit = key;
+  if(!unit) {
+    unit = 'second';
+    for(var key in units) {
+      if(units[key] <= interval && units[key] > units[unit]) {
+        unit = key;
+      }
     }
   }
 

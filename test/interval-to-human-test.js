@@ -24,6 +24,10 @@ describe('intervalToHuman', function() {
     expect(human(60000 * 60 * 24 * 7 * 4)).to.be('1 month');
   });
 
+  it('supports mannual unit specification', function() {
+    expect(human(60000, 'second')).to.be("60 seconds");
+  });
+
   it('pluralizes', function() {
     expect(human(2000)).to.be('2 seconds');
   });
