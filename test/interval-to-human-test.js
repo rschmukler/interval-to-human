@@ -28,6 +28,10 @@ describe('intervalToHuman', function() {
     expect(human(60000, 'second')).to.be("60 seconds");
   });
 
+  it('supports plural manual unit specification', function() {
+    expect(human(60000, 'seconds')).to.be("60 seconds");
+  });
+
   it('pluralizes', function() {
     expect(human(2000)).to.be('2 seconds');
   });

@@ -14,6 +14,10 @@ module.exports = function(interval, unit) {
         unit = key;
       }
     }
+  } else {
+    if(/s$/.test(unit)) {
+      unit = unit.slice(0, -1);
+    }
   }
 
   var num = Math.floor(interval / units[unit]),
