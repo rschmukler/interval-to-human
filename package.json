@@ -1,6 +1,6 @@
 {
   "name": "interval-to-human",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert interval to human readable text",
   "main": "index.js",
   "scripts": {
