@@ -13,6 +13,7 @@
     "type:coverage": "typescript-coverage-report",
     "bundle-size": "bundlesize"
   },
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git://github.com/rschmukler/interval-to-human"
